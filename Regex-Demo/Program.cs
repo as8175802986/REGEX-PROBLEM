@@ -20,9 +20,9 @@ namespace Regex_Demo
             Console.WriteLine("\n Please enter user's Email Id's--");
             string email = Console.ReadLine();
             RegularExp.Email(email);                                        //email entry
-            //Console.WriteLine("\n Please enter user's MobileNumber--");
-            //string mobile = Console.ReadLine();
-            //RegularExp.Mobile(mobile);
+            Console.WriteLine("\n Please enter user's MobileNumber--");
+            string mobile = Console.ReadLine();
+            RegularExp.Mobile(mobile);
 
            
 
