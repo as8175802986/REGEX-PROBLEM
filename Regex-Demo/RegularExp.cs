@@ -33,24 +33,7 @@ namespace Regex_Demo
             else
                 Console.WriteLine(name + " is invalid. Please check your name and start with capital letter.");
         }
-        public static void EmailArr(string[] name) //to check the array of email id's if needed.
-        {
-            string email = @"^[a-zA-Z0-9]+[+-._]?[a-zA-Z0-9]*[+-._]?[a-zA-Z0-9]+@[a-zA-Z0-9]+[.]{1}[a-zA-Z]{2,3}[.]?[a-zA-Z]{0,3}$";
-            //the regular exp email sample.
-            //+ means one or more. *- zero or more. ?- zero or 1 
-
-            Regex regex = new Regex(email);            //creating a regex named obj with regular exp email.
-            foreach (var word in name)
-            {
-                if (regex.IsMatch(word))
-                {
-                    Console.WriteLine(word + " is valid.");
-                }
-                else
-                    Console.WriteLine(word + " is invalid.");
-            }
-
-        }
+       
         public static void Email(string name)
         {
             string email = @"[a-zA-Z0-9]+[+-._]?[a-zA-Z0-9]*[+-._]?[a-zA-Z0-9]+@[a-zA-Z0-9]+[.]{1}[a-zA-Z]{2,3}[.]?[a-zA-Z]{0,3}$";
