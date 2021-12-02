@@ -16,8 +16,8 @@ namespace Regex_Demo
             RegularExp regexSample = new RegularExp();
             while (flag)
             {
-                Console.WriteLine("User Registration Validating Using Regular Expression!");
-                Console.WriteLine("Enter your Choice Number to Execute the Regex Program Press- 1-Validate First Name, 2-Validate Last Name, 3-Validate Email,4-validate mobile number,5-Password1,6-Exit");
+                Console.WriteLine("User Registration Validating Using Regular Expression!\n\n");
+                Console.WriteLine("Enter your Choice Number to Execute the Regex Program Press- 1-Validate First Name, 2-Validate Last Name, 3-Validate Email,4-validate mobile number,5-Password1,6-Password2,7-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 { 
@@ -47,6 +47,13 @@ namespace Regex_Demo
                 RegularExp.Password(Pwd);
                 break;
             case 6:
+                Console.WriteLine("Enter the Password to Check Validation");
+                string Pwd2 = Console.ReadLine();                                 //password
+                RegularExp.Password2(Pwd2);
+                break;
+
+                case 7:
+
                 flag = false;
                 break;
                  }
