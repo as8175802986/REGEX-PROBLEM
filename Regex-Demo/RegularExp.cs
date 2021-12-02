@@ -77,5 +77,20 @@ namespace Regex_Demo
             else
                 Console.WriteLine(name + " is invalid.");
         }
+        public static void Password(string name)
+        {
+            string pwd = @"[a-z,A-Z,0-9]{8,}$";         //here both country codes with 2 or 3 numbers will be valid. other than that invalid.
+            Regex regex = new Regex(pwd);                                           //creating a regex named obj with regular exp mobile number.                        
+
+            if (regex.IsMatch(name))
+            {
+                Console.WriteLine(name + " is valid. Proceed to enterring your password.");
+            }
+            else
+                Console.WriteLine(name + " is invalid.");
+        }
+
+
+
     }
 }
