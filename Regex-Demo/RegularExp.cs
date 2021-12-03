@@ -62,8 +62,8 @@ namespace Regex_Demo
         }
         public static void Password(string name)
         {
-            string pwd = @"[a-z,A-Z,0-9]{8,}$";         //here both country codes with 2 or 3 numbers will be valid. other than that invalid.
-            Regex regex = new Regex(pwd);                                           //creating a regex named obj with regular exp mobile number.                        
+            string pwd = @"[a-z,A-Z,0-9]{8,}$";        
+            Regex regex = new Regex(pwd);                                           
 
             if (regex.IsMatch(name))
             {
@@ -74,8 +74,8 @@ namespace Regex_Demo
         }
         public static void Password2(string name)
         {
-            string pwd2 = @"^(?=.*[A-Z]).{8,}$";         //here both country codes with 2 or 3 numbers will be valid. other than that invalid.
-            Regex regex = new Regex(pwd2);                                           //creating a regex named obj with regular exp mobile number.                        
+            string pwd2 = @"^(?=.*[A-Z]).{8,}$";         
+            Regex regex = new Regex(pwd2);                                                                   
 
             if (regex.IsMatch(name))
             {
